@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnDemandDependencies
+namespace OnDemandDependencies.Dependencies
 {
-	class Program
+	public interface IDependencyA
 	{
-		static void Main(string[] args)
-		{
-		}
 	}
 }
