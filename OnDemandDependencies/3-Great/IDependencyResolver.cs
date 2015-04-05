@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnDemandDependencies
+namespace OnDemandDependencies.OnDemandDependencies._3_Great
 {
-	public class MyBetterBroker
+	public interface IDependencyResolver
 	{
+		T GetInstance<T>();
 	}
 }

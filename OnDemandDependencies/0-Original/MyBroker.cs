@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnDemandDependencies
+namespace OnDemandDependencies._0_Original
 {
     public class MyBroker
     {
@@ -15,6 +15,7 @@ namespace OnDemandDependencies
 		private readonly IDependencyD DependencyD;
 		private readonly IDependencyE DependencyE;
 
+		//Constructor injection from IoC
 		public MyBroker(IDependencyA dependencyA, IDependencyB dependencyB, IDependencyC dependencyC,
 			IDependencyD dependencyD, IDependencyE dependencyE)
 		{
