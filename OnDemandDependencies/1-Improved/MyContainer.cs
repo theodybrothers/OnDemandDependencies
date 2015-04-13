@@ -11,7 +11,6 @@ namespace OnDemandDependencies._1_Improved
 	{
 		public static Container Container = new Container(x =>
 		{
-			x.For<IDependencyResolver>().Use<MyDependencyResolver>();
 			//...
 		});
 	}

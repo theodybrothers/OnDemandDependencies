@@ -1,19 +1,18 @@
 ﻿using OnDemandDependencies.Dependencies;
-using OnDemandDependencies.OnDemandDependencies._3_Great;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnDemandDependencies._3_Great
+namespace OnDemandDependencies._2_Better
 {
-	public class MyGreatBroker
+	public class BusinessEngine
 	{
 		private readonly IDependencyResolver DependencyResolver;
 
 		//Constructor injection of MyDependencyResolver from IoC
-		public MyGreatBroker(IDependencyResolver dependencyResolver)
+		public BusinessEngine(IDependencyResolver dependencyResolver)
 		{
 			DependencyResolver = dependencyResolver;
 		}
@@ -22,17 +21,6 @@ namespace OnDemandDependencies._3_Great
 		{
 			var dependencyA = DependencyResolver.GetInstance<IDependencyA>();
 			var dependencyD = DependencyResolver.GetInstance<IDependencyD>();
-
-			//...
-		}
-
-		public void SomeOtherMethod()
-		{
-			var dependencyA = DependencyResolver.GetInstance<IDependencyA>();
-			
-			//...
-
-			SomeMethod(); //Now, we will need an instance of IDependencyA again.
 
 			//...
 		}

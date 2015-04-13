@@ -54,19 +54,20 @@
     <Compile Include="2-Better\IDependencyResolver.cs" />
     <Compile Include="2-Better\MyDependencyResolver.cs" />
     <Compile Include="2-Better\MyContainer.cs" />
-    <Compile Include="3-Great\IDependencyResolver.cs" />
-    <Compile Include="3-Great\MyContainer.cs" />
-    <Compile Include="3-Great\MyDependencyResolver.cs" />
+    <Compile Include="3-Awesome\IDependencyResolver.cs" />
+    <Compile Include="3-Awesome\MyContainer.cs" />
+    <Compile Include="3-Awesome\MyDependencyResolver.cs" />
+    <Compile Include="Dependencies\IDependencyF.cs" />
     <Compile Include="Dependencies\IDependencyA.cs" />
     <Compile Include="Dependencies\IDependencyB.cs" />
     <Compile Include="Dependencies\IDependencyC.cs" />
     <Compile Include="Dependencies\IDependencyD.cs" />
     <Compile Include="Dependencies\IDependencyE.cs" />
     <Compile Include="1-Improved\MyContainer.cs" />
-    <Compile Include="2-Better\MyBetterBroker.cs" />
-    <Compile Include="0-Original\MyBroker.cs" />
-    <Compile Include="3-Great\MyGreatBroker.cs" />
-    <Compile Include="1-Improved\MyImprovedBroker.cs" />
+    <Compile Include="2-Better\BusinessEngine.cs" />
+    <Compile Include="0-Original\MyBusinessEngine.cs" />
+    <Compile Include="3-Awesome\MyBusinessEngine.cs" />
+    <Compile Include="1-Improved\MyBusinessEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

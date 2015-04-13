@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnDemandDependencies._2_Better
+namespace OnDemandDependencies._3_Awesome
 {
-	public class MyBetterBroker
+	public class MyBusinessEngine
 	{
 		private readonly IDependencyResolver DependencyResolver;
 
 		//Constructor injection of MyDependencyResolver from IoC
-		public MyBetterBroker(IDependencyResolver dependencyResolver)
+		public MyBusinessEngine(IDependencyResolver dependencyResolver)
 		{
 			DependencyResolver = dependencyResolver;
 		}
@@ -21,6 +21,17 @@ namespace OnDemandDependencies._2_Better
 		{
 			var dependencyA = DependencyResolver.GetInstance<IDependencyA>();
 			var dependencyD = DependencyResolver.GetInstance<IDependencyD>();
+
+			//...
+		}
+
+		public void SomeOtherMethod()
+		{
+			var dependencyA = DependencyResolver.GetInstance<IDependencyA>();
+			
+			//...
+
+			SomeMethod(); //Now, we will need an instance of IDependencyA again.
 
 			//...
 		}

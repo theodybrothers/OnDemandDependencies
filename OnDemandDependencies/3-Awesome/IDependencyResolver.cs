@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnDemandDependencies.OnDemandDependencies._3_Great
+namespace OnDemandDependencies._3_Awesome
 {
 	public interface IDependencyResolver
 	{
-		T GetInstance<T>();
+		T GetInstance<T>() where T : class;
 	}
 }
